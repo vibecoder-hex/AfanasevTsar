@@ -204,7 +204,7 @@ namespace AVLTree
         public static void Main(string[] args)
         {
             AVLTree tree = new AVLTree();
-            for (int value = 0; value <= 10; value++)
+            for (int value = 0; value <= 1000000; value++)
                 tree.Insert(value);
             tree.InorderTraversalData().ForEach(elem => Console.Write($"{elem} "));
         }
